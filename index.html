@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Queiroz Barbearia — Cortes, Barba e Navalha em Cachoeirinha/RS</title>
+<meta name="description" content="Queiroz Barbearia — cortes, barba e acabamento na navalha no Parque da Matriz, Cachoeirinha/RS. Agende pelo WhatsApp ou venha por ordem de chegada." />
+<link rel="icon" href="images/logo.jpg" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="cur cur-ring" id="curRing"></div>
+<div class="cur cur-dot" id="curDot"></div>
+<canvas id="grain"></canvas>
+
+<div id="loader">
+  <div class="loader-mark">
+    <img src="images/logo.jpg" alt="Queiroz Barbearia" />
+    <span class="loader-ring"></span>
+    <span class="loader-shine"></span>
+  </div>
+</div>
+
+<header class="site" id="siteHeader">
+  <nav class="nav">
+    <div class="brand">
+      <span class="brand-mark"><img src="images/logo.jpg" alt="Queiroz Barbearia" /></span>
+      <span>Queiroz Barbearia</span>
+    </div>
+    <div class="navlinks">
+      <a href="#servicos">Serviços</a>
+      <a href="#curso">Curso</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#local">Localização</a>
+    </div>
+    <a class="btn" href="https://wa.me/5551990165515" target="_blank" rel="noopener">Agendar no WhatsApp</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="images/hero.jpg" alt="Cliente sendo atendido na Queiroz Barbearia" />
+  </div>
+  <div class="hero-inner">
+    <span class="eyebrow">Rua Bauru, 441 · Parque da Matriz · Cachoeirinha, RS</span>
+    <h1>
+      <span class="ln"><span>Cada corte,</span></span>
+      <span class="ln"><span><em>na régua certa.</em></span></span>
+    </h1>
+    <p class="sub">Corte, barba e acabamento na navalha — a poucos passos de casa, no Parque da Matriz. Sem enrolação, sem pressa, do jeito que barba se faz.</p>
+    <div class="hero-cta">
+      <a class="btn" href="https://wa.me/5551990165515" target="_blank" rel="noopener">Agendar no WhatsApp</a>
+      <span class="hero-note">(51) 99016-5515 · <span id="statusHero">consultando horário…</span></span>
+    </div>
+    <p class="hero-note walk-in">Sem hora marcada? Também atendemos por ordem de chegada.</p>
+  </div>
+  <div class="scroll-cue"><span></span></div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Corte Masculino</span><span>Barba na Navalha</span><span>Fade &amp; Risco</span><span>Cachoeirinha · RS</span><span>5,0 ★ no Google</span>
+    <span>Corte Masculino</span><span>Barba na Navalha</span><span>Fade &amp; Risco</span><span>Cachoeirinha · RS</span><span>5,0 ★ no Google</span>
+    <span>Corte Masculino</span><span>Barba na Navalha</span><span>Fade &amp; Risco</span><span>Cachoeirinha · RS</span><span>5,0 ★ no Google</span>
+    <span>Corte Masculino</span><span>Barba na Navalha</span><span>Fade &amp; Risco</span><span>Cachoeirinha · RS</span><span>5,0 ★ no Google</span>
+    <span>Corte Masculino</span><span>Barba na Navalha</span><span>Fade &amp; Risco</span><span>Cachoeirinha · RS</span><span>5,0 ★ no Google</span>
+    <span>Corte Masculino</span><span>Barba na Navalha</span><span>Fade &amp; Risco</span><span>Cachoeirinha · RS</span><span>5,0 ★ no Google</span>
+  </div>
+</div>
+
+<div class="rating">
+  <div class="wrap">
+    <span class="stars">★★★★★</span>
+    <span class="score">5,0 no Google</span>
+    <blockquote>
+      "Atendimento ótimo, barbeiros profissionais, sabem o que fazem. Virei cliente!"
+      <cite>— avaliação verificada no Google</cite>
+    </blockquote>
+  </div>
+</div>
+
+<div class="stripe"></div>
+
+<section class="services" id="servicos">
+  <div class="wrap">
+    <div class="head-row">
+      <div data-reveal style="--d:0s">
+        <span class="eyebrow section-tag">Serviços</span>
+        <h2>O que sai na cadeira</h2>
+        <p>Cada corte tem sua particularidade — consulte valores direto com a equipe pelo WhatsApp ou na loja.</p>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-row" data-reveal-row>
+        <span class="name">Corte Masculino<small>Máquina e tesoura, com acabamento</small></span>
+        <span class="price tbd">Consulte</span>
+      </div>
+      <div class="menu-row" data-reveal-row>
+        <span class="name">Barba<small>Toalha quente e navalha</small></span>
+        <span class="price tbd">Consulte</span>
+      </div>
+      <div class="menu-row" data-reveal-row>
+        <span class="name">Combo Corte + Barba<small>O clássico da casa</small></span>
+        <span class="price tbd">Consulte</span>
+      </div>
+      <div class="menu-row" data-reveal-row>
+        <span class="name">Sobrancelha</span>
+        <span class="price tbd">Consulte</span>
+      </div>
+      <div class="menu-row" data-reveal-row>
+        <span class="name">Corte Infantil</span>
+        <span class="price tbd">Consulte</span>
+      </div>
+    </div>
+    <p class="menu-foot">Valores combinados na hora, direto com o barbeiro.</p>
+  </div>
+</section>
+
+<section id="curso">
+  <div class="wrap">
+    <div class="course-banner" data-reveal>
+      <div class="course-text">
+        <span class="eyebrow section-tag">Formação</span>
+        <h2>Curso de Barbeiro</h2>
+        <p>A Queiroz também forma novos barbeiros, com aulas práticas dentro da própria barbearia. Turmas, conteúdo e valores são combinados direto com a equipe — pelo WhatsApp ou pessoalmente na loja.</p>
+      </div>
+      <a class="btn course-btn" href="https://wa.me/5551990165515?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20curso%20de%20barbeiro" target="_blank" rel="noopener">Perguntar sobre o curso</a>
+    </div>
+  </div>
+</section>
+
+<section id="trabalhos">
+  <div class="wrap">
+    <div class="head-row">
+      <div data-reveal style="--d:0s">
+        <span class="eyebrow section-tag">Trabalhos</span>
+        <h2>Fade, risco e navalha</h2>
+        <p>Alguns cortes que já saíram daqui — do infantil ao clássico. Clique numa foto pra ampliar.</p>
+      </div>
+    </div>
+    <div class="gallery-grid" id="gallery">
+      <div class="g-item" data-full="images/corte-fade-relaxado.jpg" data-cap="Fade baixo, acabamento impecável"><img src="images/corte-fade-relaxado.jpg" alt="Cliente relaxado após corte com fade baixo" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/corte-degrade-textura.jpg" data-cap="Textura natural, degradê fechado"><img src="images/corte-degrade-textura.jpg" alt="Degradê com textura natural" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/corte-infantil-textura.jpg" data-cap="Corte infantil, textura definida"><img src="images/corte-infantil-textura.jpg" alt="Corte infantil com topo texturizado" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/corte-navalha.jpg" data-cap="Acabamento na navalha"><img src="images/corte-navalha.jpg" alt="Acabamento na navalha" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/barba-navalha.jpg" data-cap="Barba na régua"><img src="images/barba-navalha.jpg" alt="Barbeiro fazendo acabamento de barba na navalha" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/corte-infantil.jpg" data-cap="Corte infantil, risco duplo"><img src="images/corte-infantil.jpg" alt="Corte infantil platinado" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/cliente-classico.jpg" data-cap="Todas as idades, todos os estilos"><img src="images/cliente-classico.jpg" alt="Cliente mais experiente sendo atendido" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/cliente-loja.jpg" data-cap="Direto da loja"><img src="images/cliente-loja.jpg" alt="Cliente na porta da barbearia" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/detalhe-navalha.jpg" data-cap="Detalhe na régua"><img src="images/detalhe-navalha.jpg" alt="Barbeiro fazendo acabamento de detalhe com navalha" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/cliente-satisfeito.jpg" data-cap="Cliente satisfeito"><img src="images/cliente-satisfeito.jpg" alt="Cliente sorrindo na porta da barbearia" /><span class="plus">＋</span></div>
+      <div class="g-item" data-full="images/fachada.jpg" data-cap="Nossa fachada — Rua Bauru, 441"><img src="images/fachada.jpg" alt="Fachada da Queiroz Barbearia" /><span class="plus">＋</span></div>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox">
+  <button class="lb-close" aria-label="Fechar">&times;</button>
+  <img src="" alt="" />
+  <span class="lb-cap"></span>
+</div>
+
+<div class="stripe"></div>
+
+<section class="about" id="local">
+  <div class="wrap ambiente-wrap" data-reveal>
+    <span class="eyebrow section-tag">Ambiente</span>
+    <div class="ambiente-strip">
+      <div class="g-item amb1" data-full="images/ambiente-interior.jpg" data-cap="Espaço amplo"><img src="images/ambiente-interior.jpg" alt="Interior da Queiroz Barbearia, com poltronas e área infantil" /><span class="plus">＋</span><span class="cap">Espaço amplo</span></div>
+      <div class="g-item amb2" data-full="images/entrada.jpg" data-cap="Entrada da barbearia"><img src="images/entrada.jpg" alt="Entrada da Queiroz Barbearia, com bandeira e placa de preços" /><span class="plus">＋</span><span class="cap">Entrada da barbearia</span></div>
+      <div class="g-item amb3" data-full="images/estacoes.jpg" data-cap="Estações de atendimento"><img src="images/estacoes.jpg" alt="Estações de corte com espelhos na Queiroz Barbearia" /><span class="plus">＋</span><span class="cap">Estações de atendimento</span></div>
+    </div>
+  </div>
+  <div class="wrap about-grid">
+    <div data-reveal>
+      <span class="eyebrow section-tag">A barbearia</span>
+      <h2 style="margin-bottom:18px; font-size:clamp(1.9rem, 3vw, 2.6rem);">No Parque da Matriz, sempre por perto</h2>
+      <p>A Queiroz Barbearia atende no Parque da Matriz com cortes modernos, barba alinhada e aquele acabamento de navalha que faz diferença. Ambiente simples, atendimento nota máxima — 5,0 no Google.</p>
+      <p>Agenda pelo WhatsApp ou chega direto na loja — atendemos também por ordem de chegada, em frente à Rua Bauru.</p>
+    </div>
+    <div class="plaquette" id="pqCard" data-reveal style="--d:.12s">
+      <span class="pq-brand display">Queiroz Barbearia</span>
+      <span class="pq-sub">Parque da Matriz</span>
+      <div class="pq-row"><span class="k">Endereço</span><span class="v">Rua Bauru, 441<br />Cachoeirinha/RS, 94950-510</span></div>
+      <div class="pq-row"><span class="k">WhatsApp</span><span class="v"><a href="https://wa.me/5551990165515" target="_blank" rel="noopener">(51) 99016-5515</a></span></div>
+      <div class="pq-row"><span class="k">Instagram</span><span class="v"><a href="https://instagram.com/queiroz_barbearia2022" target="_blank" rel="noopener">@queiroz_barbearia2022</a></span></div>
+      <div class="pq-row"><span class="k">Atendimento</span><span class="v">Com hora marcada ou por ordem de chegada</span></div>
+      <div class="pq-row"><span class="k">Agora</span><span class="v"><span class="pq-open" id="statusCard">consultando horário…</span></span></div>
+      <div class="pq-row pq-hours"><span class="k">Horário</span><span class="v">
+        <span class="hr-line"><span>Segunda</span><span>10h – 19h</span></span>
+        <span class="hr-line"><span>Terça a sábado</span><span>9h – 20h</span></span>
+        <span class="hr-line off"><span>Domingo</span><span>Fechado</span></span>
+      </span></div>
+      <a class="btn" href="https://wa.me/5551990165515" target="_blank" rel="noopener">Agendar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="f-col f-brand">
+      <div class="f-brand-row">
+        <span class="brand-mark f-mark"><img src="images/logo.jpg" alt="Queiroz Barbearia" /></span>
+        <span class="fbrand">Queiroz Barbearia</span>
+      </div>
+      <p class="f-addr">Rua Bauru, 441 — Parque da Matriz<br />Cachoeirinha/RS, 94950-510</p>
+      <span class="f-rating">★★★★★ 5,0 no Google</span>
+    </div>
+    <div class="f-col">
+      <span class="f-head">Navegação</span>
+      <a href="#servicos">Serviços</a>
+      <a href="#curso">Curso de Barbeiro</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#local">Localização</a>
+    </div>
+    <div class="f-col">
+      <span class="f-head">Contato</span>
+      <a href="https://wa.me/5551990165515" target="_blank" rel="noopener">WhatsApp — (51) 99016-5515</a>
+      <a href="https://instagram.com/queiroz_barbearia2022" target="_blank" rel="noopener">@queiroz_barbearia2022</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Queiroz+Barbearia+Rua+Bauru+441+Cachoeirinha+RS" target="_blank" rel="noopener">Ver no Google Maps</a>
+    </div>
+  </div>
+  <div class="wrap f-bottom">
+    <span>© <span id="fyear"></span> Queiroz Barbearia</span>
+    <span>Cachoeirinha, RS</span>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
