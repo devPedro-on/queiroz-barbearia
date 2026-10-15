@@ -1,7 +1,7 @@
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // ---- Live open/closed status (America/Sao_Paulo) ----
+  // Live open/closed status (America/Sao_Paulo)
   var HOURS = { 0: null, 1: [600, 1140], 2: [540, 1200], 3: [540, 1200], 4: [540, 1200], 5: [540, 1200], 6: [540, 1200] };
   var DAY_NAMES = ['domingo', 'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado'];
   function label(mins) {
@@ -47,14 +47,14 @@
   var yearEl = document.getElementById('fyear');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ---- Intro loader ----
+  // Intro loader
   var loader = document.getElementById('loader');
   window.addEventListener('load', function () {
     setTimeout(function () { loader.classList.add('done'); }, reduce ? 0 : 2250);
   });
   if (reduce) loader.style.display = 'none';
 
-  // ---- Scroll progress + header shrink ----
+  // Scroll progress + header shrink
   var progress = document.getElementById('progress');
   var header = document.getElementById('siteHeader');
   function onScroll() {
@@ -66,7 +66,7 @@
   document.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // ---- Reveal on scroll ----
+  // Reveal on scroll
   var revealEls = document.querySelectorAll('[data-reveal], .menu-row[data-reveal-row], .g-item');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
@@ -92,7 +92,7 @@
     document.querySelectorAll('.menu-row').forEach(function (el) { el.classList.add('in'); });
   }
 
-  // ---- Custom cursor (fine pointer only) ----
+  // Custom cursor (fine pointer only)
   if (window.matchMedia('(pointer: fine)').matches && !reduce) {
     document.documentElement.classList.add('has-cursor');
     var dot = document.getElementById('curDot'), ring = document.getElementById('curRing');
@@ -112,7 +112,7 @@
     });
   }
 
-  // ---- Magnetic buttons ----
+  // Magnetic buttons
   if (!reduce) {
     document.querySelectorAll('.btn').forEach(function (btn) {
       btn.addEventListener('mousemove', function (e) {
@@ -123,7 +123,7 @@
       btn.addEventListener('mouseleave', function () { btn.style.transform = ''; });
     });
 
-    // ---- Plaquette tilt ----
+    // Plaquette tilt
     var card = document.getElementById('pqCard');
     if (card) {
       card.addEventListener('mousemove', function (e) {
@@ -135,7 +135,7 @@
     }
   }
 
-  // ---- Lightbox ----
+  // Lightbox
   var lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img'), lbCap = lb.querySelector('.lb-cap');
   document.querySelectorAll('.g-item').forEach(function (item) {
     item.addEventListener('click', function () {
@@ -149,7 +149,7 @@
   lb.addEventListener('click', function (e) { if (e.target === lb) closeLb(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
 
-  // ---- Grain canvas ----
+  // Grain canvas
   var canvas = document.getElementById('grain');
   if (canvas) {
     var ctx = canvas.getContext('2d');

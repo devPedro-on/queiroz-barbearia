@@ -1,4 +1,4 @@
-# Site — Queiroz Barbearia
+# Site - Queiroz Barbearia
 
 Site estático (HTML/CSS/JS puro, sem dependências ou build). Basta os arquivos, sem instalar nada.
 
@@ -19,9 +19,9 @@ Dá pra abrir `index.html` direto no navegador (duplo clique). Tudo funciona por
 
 Qualquer uma dessas opções funciona sem configuração extra, já que é só HTML/CSS/JS:
 
-- **Netlify Drop** — netlify.com/drop, arrasta a pasta inteira e já sai no ar com link.
-- **GitHub Pages** — sobe a pasta num repositório e ativa o Pages nas configurações.
-- **Vercel** — importa a pasta/repositório e publica.
+- **Netlify Drop** - netlify.com/drop, arrasta a pasta inteira e já sai no ar com link.
+- **GitHub Pages** - sobe a pasta num repositório e ativa o Pages nas configurações.
+- **Vercel** - importa a pasta/repositório e publica.
 - Ou qualquer hospedagem que aceite arquivos estáticos (a maioria dos provedores brasileiros de hospedagem também serve).
 
 ## Onde editar o quê
