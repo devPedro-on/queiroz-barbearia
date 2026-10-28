@@ -368,7 +368,7 @@
   .f-col { display: flex; flex-direction: column; gap: 11px; }
   .f-col a { text-decoration: none; color: var(--ink-soft); width: fit-content; }
   .f-col a:hover { color: var(--accent); }
-  .f-bottom { border-top: 1px solid var(--hair); padding: 18px 0; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 0.76rem; opacity: .8; }
+  .f-bottom { border-top: 1px solid var(--hair); padding-top: 18px; padding-bottom: 18px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 0.76rem; opacity: .8; }
   @media (max-width: 860px) {
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   }
